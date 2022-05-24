@@ -1,0 +1,34 @@
+
+body{
+    font-family: Verdana;
+}
+
+.logo{
+    display: inline-block;
+}
+
+.empresa {
+    border: 10px;
+    margin-left: 50px;
+    text-align: center;    
+    display: inline-block;    
+}
+
+.cliente{
+    
+    background-color: #55ccff;
+}
+
+.pedido{
+    background-color: #40ccbb;
+}
+
+.etiqueta{
+    width: 20%;
+    text-align: right; 
+    display: inline-block;
+}
+
+.campo{
+    display: inline-block;
+}

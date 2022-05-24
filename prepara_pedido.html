@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Pizza Full Stack</title>
+</head>
+<body>
+    
+    <div class="logo"> 
+        <img src="images/Logo_pizza.jpg" alt="Logo">      
+    </div>
+
+    <div class="empresa">                
+        <h1>Pizzas Full Stack</h1>
+    </div>
+
+    <form id="formulario" action="http://localhost:5000/pizza" method="post"> 
+        
+        <div class="cliente">        
+            <h2>Datos del Cliente</h2>    
+
+            <div class="captura">
+                <div class="etiqueta"><label id="lblnombre" for="nombre">Nombre</label></div>
+                <div class="campo"><input type="text" id="nombre" name="nombre"></div>
+            </div> 
+
+            <div class="captura">
+                <div class="etiqueta"><label id="lblapellido" for="apellido">Apellidos</label></div>
+                <div class="campo"><input type="text" id="apellido" name="apellido"></div>
+            </div> 
+
+            <div class="captura">                
+                <div class="etiqueta"><label for="fechanacimiento">Fecha de Nacimiento</label></div>
+                <div class="campo"><input type="date" id="fechanacimiento" name="fechanacimiento"></div>
+            </div> 
+
+            <div class="captura">                
+                <div class="etiqueta"><label for="telefono">Teléfono</label></div>
+                <div class="campo"><input type="text" id="telefono" name="telefono"></div>
+            </div> 
+
+            <div class="captura">
+                <div class="etiqueta"><label for="codigopostal">Código Postal</label></div>
+                <div class="campo"><input type="text" id="codigopostal" name="codigopostal"></div>
+            </div>                 
+            <br>
+        </div>
+
+        <div class="pedido">
+            <h2>Datos del Pedido</h2>
+            <div>
+                <div class="etiqueta"><label for="tamano">Tamaño</label></div>
+                <div class="campo">
+                    <select id="tamano" name="tamano">
+                        <option value="grande">grande</option>
+                        <option value="mediana">mediana</option>
+                        <option value="pequena">pequeña</option>        
+                    </select>
+                </div>
+            </div>
+            <div><b>Ingredientes:</b></div>
+            <div class="captura">
+                <div class="etiqueta"><label for="jamon">Jamón York</label></div>
+                <div class="campo"><input type="checkbox" id="jamon" name="jamon"></div>
+            </div>    
+            <div class="captura">
+                <div class="etiqueta"><label for="champinon">Champiñones</label></div>
+                <div class="campo"><input type="checkbox" id="champinon" name="champinon"></div>
+            </div>    
+            <div class="captura">
+                <div class="etiqueta"><label for="pepperoni">Pepperoni</label></div>
+                <div class="campo"><input type="checkbox" id="pepperoni" name="pepperoni"></div>
+            </div>    
+            <div class="captura">
+                <div class="etiqueta"><label for="aceituna">Aceitunas</label></div>
+                <div class="campo"><input type="checkbox" id="aceituna" name="aceituna"></div>
+            </div>    
+            <br>
+        </div>            
+        <div class="boton">
+            <br> 
+            <button id="enviar" type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+    </form>
+    <!-- Se modifica cambiando el archvo a (script_jquery.js) para efectos de la Micoractividad 4
+    <script src="js/script.js"></script>
+    -->
+    <script src="js/script_jquery.js"></script>
+</body>
+</html>
